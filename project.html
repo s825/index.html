@@ -30,13 +30,22 @@
 
        const story = {
         intro : {
-            text : "Zachariah Mahaffey is a temp by day and Ultraman, a superhuman with multiple abilities, by night. He is able to fly, he has superspeed, laser vision, super strength, and many more abilities he doesn't even know about. When he becomes Ultraman he keeps his identity hidden by wearing a mask over his eyes and head. He only has one arch nemesis and that is Codeman. Codeman’s abilities are very odd as well he shoots code out of his hands to defeat his enemies. Codeman has never been able to beat Ultraman at least not yet " 
+            text : "Zachariah Mahaffey is a temp by day and Ultraman, a superhuman with multiple abilities, by night. He is able to fly, he has superspeed, laser vision, super strength, and many more abilities he doesn't even know about. When he becomes Ultraman he keeps his identity hidden by wearing a mask over his eyes and head. He only has one arch nemesis and that is Codeman. Codeman’s abilities are very odd as well he shoots code out of his hands to defeat his enemies. Codeman has never been able to beat Ultraman at least not yet." ,
           , choices :[
-                     ["Continue to path one", "Path One"],
-                     ["Continue to path two",  "Path Two"],
-                     ["Continue to path three", "Path Three"]
+                     ["Continue to path one", "path1"],
+                     ["Continue to path two",  "path2"],
+                     ["Continue to path three", "path3"]
                 ]
         },
+        path1 : {
+            text : "Zach is late for work so he uses his speed ability to run to work."
+            choices : [
+                ["Zach goes striaght to work and arrives on time","path2"],
+                ["Zach stops for coffee along the way and arrives late to work","path3"],
+                ["Zach flies to work and arrives on time", "path2"]               
+            ]
+        },
+        
            
 
     function showStory(text) {
