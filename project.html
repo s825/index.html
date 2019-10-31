@@ -9,14 +9,38 @@
 <body>
     <script>
         Intro("Zachariah Mahaffey, or Zach for short, works your normal everyday 9-5 office job where he works as a temp, but when danger strikes he become ULtraman, a superhuman with multiple abilities. He is able to fly, he has superspeed, laser vision, super strength, amd many more abilities he doesnt' even know about. ")
+
+    <div id="intro">
+     <h1>The Story of Ultraman</h1>
+     <p> The story begins with Zach a.k.a Ultraman running late getting ready in the morning his job as a temp. </p>
 </div>
+<h2>And now the adventure begins</h2>
+<div id= "story">
+
+</div>
+   
 
 <div id="buttons">
 
 </div>
     <script>
-    letstoryContainer = document.getElementById("story")
-    
+       let storyContainer = document.getElementById("story");
+       
+       let buttonContainer = document.getElementById("buttons");
+
+       let history = ["intro"];
+
+       const story = {
+        intro : {
+            text : "Zachariah Mahaffey is a temp by day and Ultraman, a superhuman with multiple abilities, by night. He is able to fly, he has superspeed, laser vision, super strength, and many more abilities he doesn't even know about. When he becomes Ultraman he keeps his identity hidden by wearing a mask over his eyes and head. He only has one arch nemesis and that is Codeman. Codeman’s abilities are very odd as well he shoots code out of his hands to defeat his enemies. Codeman has never been able to beat Ultraman at least not yet " 
+          , choices :[
+                     ["Continue to path one", "Path One"],
+                     ["Continue to path two",  "Path Two"],
+                     ["Continue to path three", "Path Three"]
+                ]
+        },
+           
+
     function showStory(text) {
         let storyItem= document.createElement
         ("p"); 
@@ -41,16 +65,9 @@
 
               buttonContainer.appendChild(button);
         }
-    }
     showStory(story.intro.text);
-    const story = {
-        intro : {
-            text : "Zachariah Mahaffey is a temp by day and Ultraman, a superhuman with multiple abilities, by night. He is able to fly, he has superspeed, laser vision, super strength, and many more abilities he doesn't even know about. When he becomes Ultraman he keeps his identity hidden by wearing a mask over his eyes and head. He only has one arch nemesis and that is Codeman. Codeman’s abilities are very odd as well he shoots code out of his hands to defeat his enemies. Codeman has never been able to beat Ultraman at least not yet " 
-          , choices :["Path one", "Path two", "Path three"]
-    
-
-        
-    
+       
+          
     
     </script>
 
