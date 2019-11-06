@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Story of Ultraman</title>
+</head>
+<body>
+ 
+    <div id="intro">
+     <h1>The Story of Ultraman</h1>
+     <p> Zachariah Mahaffey is a temp by day and Ultraman, a superhuman with multiple abilities, by night. He is able to fly, he has superspeed, laser vision, super strength, and many more abilities he doesn't even know about. When he becomes Ultraman he keeps his identity hidden by wearing a mask over his eyes and head. He only has one arch nemesis and that is Codeman. Codeman’s abilities are very odd as well he shoots code out of his hands to defeat his enemies. Codeman has never been able to beat Ultraman at least not yet. (Not finished, Changing endings) </p>
+</div>
+<h2>And now the adventure begins</h2>
+<div id= "story">
+ 
+</div>
+   
+<div id="buttons">
+ 
+</div>
+    <script>
+ 
+       let storyContainer = document.getElementById("story");
+       
+       let buttonContainer = document.getElementById("buttons");
+ 
+       let history = ["intro"];
+ 
+       const story = {
+        intro : {
+            text : "The story begins with Zach a.k.a Ultraman running late getting ready in the morning his job as a temp. What should Zach do? ",
+            choices :[
+                     ["Since Zach is running late for work he uses his speed ability to run to work.", "page1"],
+                     ["Fast picks him up for work and drives him.", "page2"],
+                     ["Zach flies himself to work.", "page3"]
+                ]
+        },
+    
+
+       page1 : {
+           text : "Zach rushes himself to get ready and leaves home. He uses his speed ability and on his way he wonders if he should stop and get coffee or just go straight to work.",
+           choices : [
+                     ["Zach goes straight to work.", "page4"],
+                     ["Zach stops and gets coffee.", "page5"]
+                ]
+ 
+       },
+ 
+       page2 : {
+           text : "Do Zach and Fast stop for some coffee or does Fast drive quickly and get Zach to work on time?",
+           choices : [
+                     ["Zach and Fast stop for some donuts and coffee.","page6"],
+                     ["Fast drives quickly to make sure Zach gets to work on time.", "page7"]
+                
+                ]
+        },
+                  
+       page3 : { 
+           text : "Zach rushes himeself outside and starts to fly to work, but as he is flying he notices a pedestrian look at him and point! His identity might be compromised! What should Zach do?",
+           choices : [ 
+                     ["Try and convince the pedestrian that it wasn't what it looked like.", "page8"],
+                     ["He continues to fly straight to work and hopes the pedestrian doesn't know who he is.", "page9"]
+ 
+           ]
+       },
+ 
+       page4 : {
+           text : "When he gets to work he notices he made it just on time, but he feels as if something is off. He brushes it off as nothing, gets to his desk, and starts his work. Zach goes halfway through the day when he gets a distress alert on his phone for Codeman in his office building. What should he do? ",
+           choices : [
+                     ["He tries to avoid confrontation and sneaks his way out along with other coworkers.", "page10"],
+                     [ "He quickly goes to the bathroom to change into his super suit.", "page11"]
+           ]
+       },
+ 
+      page5 : {
+          text : "Zach stops at his favorite coffee shop and gets his usual order. As he waits someone from outside runs in and yells to turn on the t.v. to the news channel. The waitress does just that and Zach notices that the building he works in is on fire and at the same time he gets a distress alert on his phone that codeman is in his office building. What should Zach do?",
+          choices : [
+                    ["He uses his speed ability to get to work and rips off his work attire revealing his supersuit.", "page12"],
+                    ["He waits for his coffee and then makes his way to work.", "page13"]
+          ]
+      
+      },
+ 
+      page6 : {
+          text : "Zach and Fast decide to get donuts and coffee and risk being late. While they wait Fast excuses himself to use the bathroom. Zach watches the news and after what seemed like five minutes the channel goes live. He sees his enemy Codeman and he realizes that the building Codeman is on top of is the same coffee shop that Zach was in. Zach needed to think fast about what he would do next. ",
+          choices : [
+                    ["Zach runs to the nearest room to him and takes of his office attire revealing his super suit.", "page14"],
+                    ["Zach runs to the bathroom to find fast and leave.", "page15"]
+          ]
+      }, 
+ 
+      page7 : {
+          text : "As Zach rushes into Fast's car, Fast quickly starts driving and helps Zach get to work just on time. Zach runs to his desk and immediately gets zoned out with his work. After what seemed like hours Zach hears a loud bang with screams following. He gets up and looks in the same direction his co-workers were looking and other workers were running away from the same direction. He knew he had to quickly come up with a plan.",
+          choices : [
+                    ["Should Zach go and investigate?", "page16"],
+                    ["Should he play it safe and change into his super suit.", "page17"]
+ 
+          
+          ]
+      },
+ 
+      page8 : { 
+          text : "Zach flies down to her to explain himself but he end up exposing himself even more because he is just in his normal job attire and within minutes Ultramans identity is revealed. At the same time, he gets a distress alert saying that codeman has been destorying the building Zach works in leaving many innocent people injured.", //(pre mature ending? or Game over?)
+          choices : [
+                    ["hrtht", "page18"],
+                    ["idbcou", "page19"]
+          ]
+      },
+
+      page9 : { 
+          text : "Zach gets to work and within minutes he sees a video of a small person flying on the news, but luckily no one knows it's him. At the same time he gets a distress alert saying that code man is in the same building he's in. What should his next step be?",
+          choices : [
+                    ["Zach should go and investigate.", "page20"],
+                    ["Zach plays it safe and quickly runs to the bathrooms to change into his Ultraman suit.", "page21"]
+          ] 
+      },
+
+      page10 : { 
+          text : "Once Zach gets out he realizes that if he doesn't stay and confront Codeman lots of peopole could get hurt. So he finds an area no one is at and changes into his super suit. What should his next step be?",
+          choices : [
+                    ["Zach flies to Codeman and confronts him.", "page22"],
+                    ["Zach looks for Codeman and tries to sneak a surprise attack on him.", "page23"]
+          ]
+
+      },
+
+      page11 : {
+          text : "Once he's in his suit and uses his speed ability once again, he arrives to his building and sees Codeman at the top destroying the building. Should Zach confront him or should he be sneaky and get him when he least expects it.",
+          choices : [
+                    ["Zach or Ultraman should confront Codeman.", "page24"],
+                    ["Ultraman should should be sneaky and get Codeman with a surprise attack.", "page25"]
+
+          ]
+      },
+
+      page12 : {
+          text : "As soon as Ultraman arrives he notices two things. The first thing that he notices is that a piece of a building is about to fall on a group of people and second thing he notices is that Codeman's about to drop someone from the roof of the building. He gets anxious when he realizes he has to make a decision. ",
+          choices : [
+                    ["Zach should save the group of people,", "page26"]
+                    ["Zach is going to save the person from falling.", "page27"]
+          ]
+      },
+
+      page13 : {
+          text : "Once he gets his coffee he goes to where all of the destruction takes place. He was too late and Codeman was nowhere to be seen. Many people were badly injured or dead."
+      },
+
+      page14 : {
+          text : "Once he is in his suit, the roof of the building falls down on him. He pushes it off and looks up to see Codeman looking down at him.",
+          choices : [
+                    ['"Why are you doing this, Codeman?" Ultraman asks.', 'page28'],
+                    ['" Who are you, Codeman?" Ultraman asks.', 'page30']    
+          ]
+      },
+
+      page15 : {
+          text : "Zach gets to the bathroom and calls out for Fast, but there is no repsonse. He makes a quick desicion and breaks into the stall and sees a huge hole in the wall leading to the outside. He walks out and is crushed by a piece of the building so he pushes it off and sees Codeman looking down at him from the top of the building.",
+          choices : [
+                    ['"What did you do with my friend!?" Ultrman asks upset', 'page31']
+                    ['"Who are you and why are you doing this?!" Ultraman asks', 'page32']
+          ]
+      },
+      page16 : {
+          text : 'Zach gets leaves his desk and goes to investigate by going the opposite way of all the terrified people. He goes down the hall and enters a room with burning pieces of the building. "Well, hello Zach." Zach turns around slowly and sees Codeman in front of the doorway.',
+          choices : [
+                    ['"Who are you?", Zach asks confused as to how Codeman knows him.', 'page33'],
+                    ['"Why are you doing this", Zach asks', 'page34']
+          ]
+      },
+ 
+      page17 : {
+          text : 'Zach decides to play it safe and quickly gets into his super suit. He then goes into the direction that his horrified co-workers run from. As he continues to walk in the direction he hears things being smashed and as he gets closer he sees Codeman.',
+          choices : [
+                   ['"CODEMAN YOU NEED TO LEAVE!", Ultraman says','page35'],
+                   ['"Codeman, why are you doing this?" Ultraman asks', 'page36' ]
+          ]
+      },
+ 
+      page20 : { 
+        text : 'Zach gets leaves his desk and goes to investigate by going the opposite way of all the terrified people. He goes down the hall and enters a room with burning pieces of the building. "Well, hello Zach." Zach turns around slowly and sees Codeman in front of the doorway',
+        choices : [
+                  ['"Why are you doing this", Zach asks', 'page37'],
+                  ['"Who are you?", Zach asks confused as to how Codeman knows him.', 'page38']
+        ]
+      },
+ 
+      page21 : { 
+          text : 'Zach decides quickly get into his super suit. He then goes into the direction that his horrified co-workers run from. As he continues to walk in the direction he hears things being smashed and as he gets closer he sees Codeman.',
+          choices : [
+                    ['"CODEMAN YOU NEED TO LEAVE!", Ultraman says', 'page39'],
+                    ['"Codeman, why are you doing this?" Ultraman asks', 'page40']
+ 
+          ]
+      },
+ 
+      page22 : {
+          text : 'Zach flies up to Codeman and says, "HEY! Take your anger out on me instead of these innocent people." Codeman turns around and says, "Just the person I was looking for. You know I can only take so much of being your shadow and I am tired of it."',
+          choices : [
+                   ['"What are you trying to say?" Ultraman asks', 'page41'],
+                   ['"Get to the point so we can get this over with!" Ultraman exclaimed', 'page42']       
+          ]
+       },
+ 
+       page23 : { 
+           text : 'It takes a minute of flying around, but eventually Ultraman finds codeman destroying the building so he sneaks behind him and goes in for the attack. Just as he was about to hit Codeman his arm got caught...by Ultraman. "Well, hello there Zach."',
+           choices : [
+                    ['"How do you know me?"', 'page43'],
+                    [ '" Why are you doing this?"', 'page44']
+          ] 
+       },
+ 
+       page24 : { 
+           text : 'Zach flies up to Codeman and says, "HEY! Take your anger out on me instead of these innocent people." Codeman turns around and says, "Just the person I was looking for. You know I can only take so much of being your shadow and I am tired of it."',
+          choices : [
+                   ['"What are you trying to say?" Ultraman asks', 'page45'],
+                   ['"Get to the point so we can get this over with!" Ultraman exclaimed', 'page46']       
+          ]
+       },
+ 
+      page25 : {
+          text : 'It takes a minute of flying around, but eventually Ultraman finds codeman destroying the building so he sneaks behind him and goes in for the attack. Just as he was about to hit Codeman his arm got caught...by Ultraman. "Well, hello there Zach."',
+           choices : [
+                    ['"How do you know me?"', 'page47'],
+                    [ '" Why are you doing this?"', 'page48']
+          ] 
+       },
+ 
+       page26 : {
+           text : 'With Zach and his quick thinking he goes under the piece of building and breaks though it, still flying up he manages to save the falling person. After he gets the person safely to the ground he goes after Codeman.',
+           choices : [
+                    [ '"Why are you doing this" Zach asks', 'page49'],
+                    ['"Who are you?", Zach asks confused as to how Codeman knows him.', 'page50']
+           ]
+       },
+ 
+       page27 : {
+           text : 'Zach thinks quickly and uses his speed ability as well as his flying ability. He saves the girl and quickly moves down to break the piece of building down before it falls on the group of people.',
+           choices : [
+                     [ '"Why are you doing this" Zach asks', 'page51'],
+                     ['"Who are you?", Zach asks confused as to how Codeman knows him.','page52'] 
+        ]
+    },
+
+      page28 : { 
+          text : '"Why am I doing this? I have been been your shadow for as long as I can remember. You get the credit for everything, even when I was there helping in the situatuion."',
+          choices : [
+                    ['"What are you talking about?..."']
+          ]
+      },
+
+      page30 : {
+          text : '"Who am I?", Codeman chuckles at the question. He turns around and takes off his mask and then turns around again to face Ultraman. "Fast...", Zach says shocked.',
+          choices : [
+                    ['"How could you do this?"," Zach says completely shattered.']
+          ]
+      },
+       
+      Page31 : {
+             Text : 'Codeman chuckled at the question and turned around, took off his mask, then turned back around facing Zach. “Fast…”.', 
+          choices : [
+                    [ '"How could you do this?."' ]
+         ]
+    },
+ 
+     Page32 : {
+         Text : 'Codeman chuckled at the question and turned around, took off his mask, then turned back around facing Zach. “Now to answer your question, all my life I have been your shadow and now I have chosen to make a name for myself. I never got any credit for anything I helped you with and I never get recognized.”',
+         Choices : [
+                   ['Zach stayed quiet and clenched his fists.']
+            ]
+       },
+
+       
+      page33 : {
+          text : '"Who am I?", Codeman chuckles at the question. He turns around and takes off his mask and then turns around again to face Ultraman. "Fast...", Zach says shocked.',
+          choices : [
+                    ['"How could you do this?"," Zach says completely shattered.']
+          ]
+      },
+
+      page34 : { 
+          text : '"Why am I doing this? I have been been your shadow for as long as I can remember. You get the credit for everything, even when I was there helping in the situatuion."',
+          choices : [
+                    ['"What are you talking about?..."']
+         ]
+      },
+
+     page35 : { 
+         text : 'Codeman chuckles and turns around. He takes off his mask and turns back around to face Ultraman.',
+         choices : [  
+                   ['"Fast...how could you do this?"," Zach says completely shattered.']
+          ]
+     },
+
+     page36 : { 
+          text : '"Why am I doing this? I have been been your shadow for as long as I can remember. You get the credit for everything, even when I was there helping in the situatuion."',
+          choices : [
+                    ['"What are you talking about?..."']
+         ]
+      },
+
+      page37 : { 
+          text : '"Why am I doing this? I have been been your shadow for as long as I can remember. You get the credit for everything, even when I was there helping in the situatuion."',
+          choices : [
+                    ['"What are you talking about?..."']
+         ]
+      },
+
+      page38 : {
+          text : '"Who am I?", Codeman chuckles at the question. He turns around and takes off his mask and then turns around again to face Ultraman. "Fast...", Zach says shocked.',
+          choices : [
+                    ['"How could you do this?"," Zach says completely shattered.']
+          ]
+      },
+
+      page39 : { 
+         text : 'Codeman chuckles and turns around. He takes off his mask and turns back around to face Ultraman.',
+         choices : [  
+                   ['"Fast...how could you do this?"," Zach says completely shattered.']
+          ]
+     },
+
+      page40 : { 
+         text : 'Codeman chuckles and turns around. He takes off his mask and turns back around to face Ultraman.',
+         choices : [  
+                   ['"Fast...how could you do this?"," Zach says completely shattered.']
+          ]
+     },
+
+     Page41 : {
+             Text : 'Codeman chuckled at the question and turned around, took off his mask, then turned back around facing Zach. “Fast…”.', 
+          choices : [
+                    [ '"How could you do this?."' ]
+         ]
+    },
+
+    Page42 : {
+             Text : 'Codeman chuckled and turned around, took off his mask, then turned back around facing Zach. “Fast…”.', 
+          choices : [
+                    [ '"How could you do this?."' ]
+         ]
+    },
+
+    Page43 : {
+             Text : 'Codeman chuckled and turned around, took off his mask, then turned back around facing Zach. “Fast…”.', 
+          choices : [
+                    [ '"How could you do this?."' ]
+         ]
+    },
+
+    page44 : { 
+          text : '"Why am I doing this? I have been been your shadow for as long as I can remember. You get the credit for everything, even when I was there helping in the situatuion." Codeman turns around and takes off his mask. He turns back around to face Zach. "Fast..."',
+          choices : [
+                    ['"What are you talking about and how could you do this?..."']
+         ]
+      },
+
+      Page43 : {
+             Text : 'Codeman chuckled and turned around, took off his mask, then turned back around facing Zach. “Fast…”.', 
+          choices : [
+                    [ '"How could you do this?."' ]
+         ]
+    },
+
+
+   
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+       function makeButton(btnText, choice){
+            let button = document.createElement("button");
+            button.innerHTML = btnText;
+            buttonContainer.appendChild(button);
+            button.addEventListener ("click", function() {
+                history.push(choice);
+                showStory();
+            });
+        }
+        function buildStory(text) {
+            let storyItem = document.createElement("p");
+            storyItem.innerText = text;
+            storyContainer.appendChild(storyItem);
+        }
+        function showStory(){
+            let currentPage = history[history.length - 1]; 
+            storyContainer.innerHTML = "";
+            buttonContainer.innerHTML = ""; 
+            
+            for(let page of history){ 
+                buildStory(story[page].text);
+            }
+            
+            for(let choice of story[currentPage].choices){ 
+                makeButton(choice[0], choice[1])
+            }
+        }
+        showStory();
+ 
+    
+    </script>
+ 
+ 
+</body>
+</html>
